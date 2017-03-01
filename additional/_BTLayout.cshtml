@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -BT Project</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/dropzonescss")
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#">
+                    <span class="logo-retail-sm"></span>
+                    <span class="logo-libEdu-sm"></span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="notifications fr">
+                    <a href="#" class="system-notif-active"><span class="count onedigit">3</span></a>
+                    <a href="#" class="my-notif-active"><span class="count threedigits">820</span></a>
+                </div><!--END of .notifications-->
+
+                <div class="clear"></div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <div class="usermenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="profilePic-default-sm"></span><span class="user-login-id">hall_kennedy</span><span class="chevron-down-primary"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span><span class="myProfile-userMenu"></span></span>My Profile</a></li>
+                                <li><a href="#"><span><span class="userPermissions-userMenu"></span></span>Manage User Permissions</a></li>
+                                <li><a href="#"><span><span class="userGroups-userMenu"></span></span>User Groups</a></li>
+                                <li><a href="#"><span><span class="sysNotif-userMenu"></span></span>Manage System Notifications</a></li>
+                                <li><a href="#"><span><span class="logout-userMenu"></span></span>Log Out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-sm-3 col-md-2 col-lg-2 sidebar sidebar-offcanvas">
+                <ul class="nav nav-sidebar">
+                    <li class=""><a href="#"><span class="home-sideMenu"></span>Dashboard </a></li>
+                    <li class="dropdown">
+                        <a href="#" data-target="#item1" data-toggle="collapse">
+                            <span class="lists-sideMenu"></span>
+                            <span class="collapse in hidden-xs">Lists 
+                                <span class="chevron-right-secondary"></span>
+                                <span class="dn chevron-down-secondary"></span>
+                            </span>
+                        </a>
+                        <ul class="nav nav-stacked collapse left-submenu" id="item1">
+                            <li><a href="#">DK Eyewitness</a></li>
+                            <li><a href="#">Top 300 Travel Series</a></li>
+                            <li><a href="#">Spring Top 100 Antiques &amp; Collectibles</a></li>
+                            <li><a href="#">Top 100 Occupations &amp; Careers</a></li>
+                            <li><a href="#">Harris Infosource</a></li>
+                            <li class="ta-r">
+                                <span>
+                                    <a href="#">See More <span class="chevron-seeMore-secondary"></span></a><br>
+                                    <span>
+                                        User Group:<br>
+                                        <a href="#">Standing Orders Team</a>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-target="#item2" data-toggle="collapse">
+                            <span class="settings-sideMenu"></span>
+                            <span class="collapse in hidden-xs">Settings 
+                                <span class="chevron-right-secondary"></span>
+                                <span class="dn chevron-down-secondary"></span>
+                            </span>
+                        </a>
+                        <ul class="nav nav-stacked collapse left-submenu" id="item2">
+                            <li><span class="myProfile-sideMenu"></span> @Html.ActionLink("My Profile", "MyProfile", "Dashboard")</li>
+                            <li><a href="#"><span class="userPermissions-sideMenu"></span>Manage User Permissions</a></li>
+                            <li><a href="#"><span class="userGroups-sideMenu"></span>User Groups</a></li>
+                            <li><a href="#"><span class="sysNotif-sideMenu"></span>Manage System Notifications</a></li>
+                            <li><a href="#"><span class="logout-sideMenu"></span>Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-lg-10 main">
+                <p class="pull-right visible-xs">
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle sidenav</button>
+                </p>
+                @RenderBody()
+
+                <footer>
+                    <div class="info">
+                        <ul>
+                            <li><a href="http://www.baker-taylor.com/about.cfm" target="_blank">About</a></li>
+                            <li><a href="http://www.baker-taylor.com/privacy.cfm" target="_blank">Privacy Policy</a></li>
+                        </ul>
+                        <p>Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. Baker &amp; Taylor. All Rights Reserved.<br>For more information, call us toll-free at 1-800-775-1800.</p>
+                    </div><!--END of .info-->
+                    <div class="social">
+                        <ul>
+                            <li class="facebook"><a href="http://www.facebook.com/pages/Baker-Taylor/140688295944178" target="_blank"><span>Facebook</span></a></li>
+                            <li class="linkedin"><a href="http://www.linkedin.com/company/12055" target="_blank"><span>Linked In</span></a></li>
+                            <li class="twitter"><a href="http://twitter.com/BakerandTaylor" target="_blank"><span>Twitter</span></a></li>
+                            <li class="youtube"><a href="http://www.youtube.com/user/BakerandTaylorTV?feature=mhw5" target="_blank"><span>YouTube</span></a></li>
+                        </ul>
+                    </div><!--END of .social-->
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!--<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               @* @Html.ActionLink("TS360 ", "MyFiveMostRecentData", "Dashboard", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">                    
+                    @*<li>@Html.ActionLink("My Left Menu", "LeftMenu", "Dashboard")</li>*@
+                    @*<li>@Html.ActionLink("Notifications", "IndexPage", "Notification")</li>
+                    <li>@Html.ActionLink("My Profile", "MyProfile", "Dashboard")</li>
+                    <li>@Html.ActionLink("My Recent Data 5 Details", "MyFiveMostRecentData", "Dashboard")</li>
+                    <li>@Html.ActionLink("My Expiring Data", "MyExpiringData", "Dashboard")</li>
+                    <li>@Html.ActionLink("Show All", "Home", "Dashboard")</li>*@ 
+                    
+                </ul>              
+            </div>
+        </div>
+    </div>-->
+    <!--<div class="container body-content">
+        <div class="row">
+            @*@RenderBody()*@
+        </div>
+    </div>--><!--END of .container-->
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap") 
+    @Scripts.Render("~/Scripts/angular.min.js")
+    @Scripts.Render("~/Scripts/angular-animate.min.js")
+    @Scripts.Render("~/Scripts/Angular-ui/ui-bootstrap-tpls.min.js")
+    @Scripts.Render("~/Scripts/AngularJsScripts/MyModel.js")
+    @Scripts.Render("~/Scripts/AngularJsScripts/angular.treeview.js")
+    @Scripts.Render("~/Scripts/AngularJsScripts/MyApp.js")
+    @Scripts.Render("~/bundles/dropzonescripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

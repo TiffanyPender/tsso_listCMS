@@ -1,0 +1,5 @@
+HEADER / FOOTER
+C:\Users\pendert\Documents\Visual Studio 2015\Projects\CMSProjects\BT.TS360.CMS.Project\Views\Shared\_BTLayout.cshtml
+
+CSS
+C:\Users\pendert\Documents\Visual Studio 2015\Projects\CMSProjects\BT.TS360.CMS.Project\Content\Site.css

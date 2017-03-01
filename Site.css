@@ -1,0 +1,308 @@
+body {
+    padding-top: 140px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/***********    GENERAL  *************/
+.fl {float: left;}
+.fr {float: right;}
+.clear {clear: both;}
+.dn {display: none !important;}
+.ta-r {text-align: right;}
+.ta-l {text-align: left;}
+
+/***********    SPRITE IMAGES  *************/
+.logo-retail, .logo-libEdu, .logo-retail-sm, .logo-libEdu-sm, .login-header, #login-id, #login-pw, #hiddenPW, #visiblePW, .tertiaryChkbx + label span, .lock, .facebook, .linkedin, .twitter, .youtube, .hamburger-sideMenu, .home-sideMenu, .lists-sideMenu, .settings-sideMenu, .myProfile-sideMenu, .helpSupport-sideMenu, .userPermissions-sideMenu, .userGroups-sideMenu, .sysNotif-sideMenu, .logout-sideMenu, .chevron-right-secondary, .chevron-down-secondary, .chevron-seeMore-secondary, .profilePic-default-sm, .chevron-down-primary, .myProfile-userMenu, .helpSupport-userMenu, .userPermissions-userMenu, .userGroups-userMenu, .sysNotif-userMenu, .logout-userMenu, .chevron-down-dkprimary, .edit-listItemMenu, .setExp-listItemMenu, .delete-listItemMenu, .item-edit-pencil-primary, .item-delete-primary, .item-edit-pencil-secondary, .item-delete-secondary, .system-notif-active, .my-notif-active, .system-notif-inactive, .my-notif-inactive, .lists-btn, .manual-sort-up-active, .manual-sort-up-inactive, .manual-sort-down-active, .manual-sort-down-inactive, .close-modal, .item-save-primary-modal, .item-delete-primary-modal, .item-notif-primary-modal, .item-loc-delete-modal, .blueRadio + label span, .datepicker-cal-modal, .increase-up, .decrease-down, .upload, .add-notif, .delete-notif, .chevron-goback-modal, .question-info, .primaryChkbx + label span, .cal-prev, .cal-next, .cal-currDay, .cal-expiring, .sort-ascending, .sort-descending, .secondaryChkbx + label span, .profilePic-default-lg, .user-mng-user-grps, .attachment, .search-modal, .add-user, .remove-user, .clear-btn, .trashbin, .cal-light, .newNotif, .ico-success, .ico-error {background: url('Images/cms-sprite.png') no-repeat; float: left;}
+
+/***********    TOP NAVBAR  *************/
+.navbar-default {background-color: #fff; border-top: none; border-right: none; border-bottom: 3px solid #004A80; border-left: none; margin-bottom: 0px;}
+.navbar-header {margin-top: 10px;}
+.logo-retail-sm {background-position: -5px -273px; width: 118px; height: 61px; float: left; margin-right: 20px;}
+.logo-libEdu-sm {background-position: -167px -270px; width: 266px; height: 51px; float: left;}
+
+.notifications {}
+    .notifications .system-notif-active {background-position: -464px -271px; width: 57px; height: 46px; margin-right: 10px;}
+	.notifications .my-notif-active {background-position: -528px -271px; width: 50px; height: 49px; /************/margin-right: 20px;}
+	.notifications .system-notif-inactive {background-position: -464px -228px; width: 39px; height: 33px; margin-right: 10px;}
+	.notifications .my-notif-inactive {background-position: -528px -230px; width: 29px; height: 34px;}
+    .notifications span.count {float: right;color: #FFFFFF; font-size: 11px; margin-top: 11px;}
+	.notifications span.count.onedigit {margin-right: 14px;}
+	.notifications span.count.twodigits {margin-right: 10px;}
+	.notifications span.count.threedigits {margin-right: 9px;}
+
+ul.navbar-right {margin-top: -50px;}
+    ul.navbar-right .usermenu {float: right; margin: 15px 42px 7px 0px;}
+    ul.navbar-right .profilePic-default-sm {background-position: -715px -112px; width: 41px; height: 41px; float: left; margin-right: 8px;}
+    ul.navbar-right .user-login-id {float: left;margin-top: 8px; color: #757575; font-size: 16px;}
+    ul.navbar-right .chevron-down-primary {background-position: -761px -112px; width: 14px; height: 8px; float: left; margin: 15px 0px 0px 8px;}
+    .usermenu .dropdown-menu {border-radius: 0px; padding: 0px; margin-right: 42px; min-width: 260px;}
+        .usermenu .dropdown-menu li a {border-bottom: 1px solid #DADADA; font-size: 14px; font-weight: 500; padding: 12px 15px;}
+        .usermenu .dropdown-menu li a, .usermenu .dropdown-menu li a:hover, .usermenu .dropdown-menu li a:focus {color: #3B4354; text-decoration: none;}
+        .usermenu .dropdown-menu li a > span:first-of-type {margin: 0px 11px 0px 0px; width: 30px; max-height: 40px; float: left;}
+        .usermenu .dropdown-menu li a:hover {background-color: #F1F1F1;}
+        .usermenu .dropdown-menu .myProfile-userMenu {background-position: -719px -164px; width: 18px; height: 22px;}
+	    .usermenu .dropdown-menu .helpSupport-userMenu {background-position: -744px -164px; width: 22px; height: 22px;}
+	    .usermenu .dropdown-menu .userPermissions-userMenu {background-position: -772px -164px; width: 27px; height: 24px;}
+	    .usermenu .dropdown-menu .userGroups-userMenu {background-position: -806px -166px; width: 24px; height: 17px;}
+	    .usermenu .dropdown-menu .sysNotif-userMenu {background-position: -1119px -58px; width: 24px; height: 20px;}
+	    .usermenu .dropdown-menu .logout-userMenu {background-position: -838px -163px; width: 17px; height: 27px;}
+
+/***********    SIDEBAR  *************/
+.sidebar {position: fixed; top: 117px; bottom: 0; left: 0; z-index: 1000; display: block; padding: 20px 0px; overflow-x: hidden; overflow-y: auto; background-color: #3B4354; border-right: 1px solid #2F3C48; float: left;}
+    .sidebar ul.nav-sidebar > li {border-bottom: 1px solid #2F3C48; font-size: 18px;}
+    .sidebar ul.nav-sidebar > li:first-of-type {border-top: 1px solid #2F3C48;}
+    .sidebar .nav > li > a {color: #FFF;}
+    .sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus {background-color: #485266;}
+    /*.sidebar ul.nav-sidebar > li > div:first-of-type:hover {background-color: #485266;}*/
+	.sidebar ul.nav-sidebar > li.active > div:first-of-type {background-color: #485266; border-bottom: 1px solid #2F3C48;}
+	.sidebar ul.nav-sidebar > li a:hover {text-decoration: none;}
+	.sidebar ul.nav-sidebar > li a span {margin-right: 15px; float: left;}
+	.sidebar ul.nav-sidebar > li ul.left-submenu {padding: 0px;}
+	.sidebar ul.nav-sidebar > li:last-of-type ul.left-submenu li:last-of-type {border-bottom: none !important; padding: 12px 10px 17px 55px;}
+	.sidebar ul.nav-sidebar > li ul.left-submenu li {border-bottom: 1px solid #CCCCCC; padding: 10px 10px 10px 55px; line-height: 1.2; font-size: 14px;}
+	.sidebar ul.nav-sidebar > li ul.left-submenu li:hover {background-color: #485266;}
+	.sidebar ul.nav-sidebar > li ul.left-submenu li.ta-r {font-size: 14px;}
+	.sidebar ul.nav-sidebar > li ul.left-submenu li.ta-r span span {font-style: italic; font-size: 12px; color: #FFFFFF;}
+    .hamburger-sideMenu {background-position: -803px -112px; width: 28px; height: 24px; float: right; margin-right: 15px; margin-bottom: 40px;}
+	.home-sideMenu {background-position: -837px -111px; width: 27px; height: 28px; margin-right: 11px !important;}
+	.lists-sideMenu {background-position: -871px -112px; width: 23px; height: 21px;}
+	.settings-sideMenu {background-position: -901px -112px; width: 23px; height: 24px;}
+	.myProfile-sideMenu {background-position: -719px -195px; width: 18px; height: 22px;}
+	.helpSupport-sideMenu {background-position: -744px -196px; width: 22px; height: 22px;}
+	.userPermissions-sideMenu {background-position: -772px -196px; width: 27px; height: 24px;}
+	.userGroups-sideMenu {background-position: -806px -197px; width: 24px; height: 17px;}
+	.sysNotif-sideMenu {background-position: -1085px -58px; width: 24px; height: 20px;}
+	.logout-sideMenu {background-position: -838px -194px; width: 17px; height: 27px;}
+	.chevron-right-secondary {background-position: -763px -128px; width: 8px; height: 14px; margin-right: 0px !important; float: right !important; margin-top: 5px;}
+	.chevron-down-secondary {background-position: -778px -128px; width: 14px; height: 8px; margin-right: 0px !important; float: right !important; margin-top: 9px;}
+	.chevron-seeMore-secondary {background-position: -783px -112px; width: 15px; height: 9px; margin-right: 0px !important; float: right !important; margin-top: 3px;}
+@media screen and (max-width: 767px) {
+    .sidebar {top: 104px; right: -50%; position: absolute; width: 50%;}
+}
+/***********    FOOTER  *************/
+footer {background-color: #3B4354; color: #FFF; float: left; width: 100%; padding: 10px; margin-top: 30px; border-top: 1px solid #2F3C48;}
+footer ul {padding-left: 0px;}
+footer ul li {display: inline-block;}
+footer .info {float: left; width: 500px;}
+    footer .info ul {padding-left: 0px;}
+    footer .info ul li {padding-right: 10px; padding-left: 7px; border-right: 1px solid #FFFFFF;}
+    footer .info ul li:first-of-type {padding-left: 0px;}
+    footer .info ul li:last-of-type {border-right: none;}
+    footer .info ul a, footer .info ul a:active, footer .info ul a:focus {color: #FFFFFF;}
+    footer .info p {line-height: 1.4; font-size: 14px; margin-bottom: 0px; padding-top: 10px;}
+footer .social {float: right;}
+    footer .social ul li {width: 32px; height: 32px; margin-right: 5px;}
+    footer .social ul li:last-of-type {margin-right: 0px;}
+    footer .social ul li:hover {opacity: 0.7;}
+    footer .social ul li a {display: block; width: 100%; height: 100%;}
+    footer .social ul li a span {position: absolute; left: -9999px;}
+    footer .social ul li.facebook {background-position: -923px -55px;}
+    footer .social ul li.linkedin {background-position: -963px -55px;}
+    footer .social ul li.twitter {background-position: -1003px -55px;}
+    footer .social ul li.youtube {background-position: -1044px -55px;}
+
+/*===========================================================*/
+.table-css {
+    border-bottom: 1px solid red;
+}
+
+tr:nth-child(even) {
+    background: #CCC !important;
+}
+
+tr:nth-child(odd) {
+    background: #FFF !important;
+}
+
+
+.table-css {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table-css td, th {
+        padding: 7px;
+        border: #4e95f4 1px solid;
+    }
+
+    .table-css tr {
+        background: #b8d1f3;
+    }
+
+        .table-css tr:nth-child(odd) {
+            background: #b8d1f3;
+        }
+
+        .table-css tr:nth-child(even) {
+            /*background: #dae5f4;*/
+            background: #f9f9f9;
+        }
+
+    .table-css caption {
+        background: #4e95f4;
+        text-align: left;
+        padding: 5px;
+    }
+
+
+
+
+.navbar-inverse {
+    background-color: #161a94 !important;
+    border-color: #080808 !important;
+}
+
+    /*.navbar-inverse {
+    background-color: gray;
+    border-color: gray;
+}
+/* Home page links starts*/
+    .navbar-inverse .navbar-nav > li > a, .navbar-brand {
+        color: white !important;
+    }
+
+        .navbar-inverse .navbar-nav > li > a:hover {
+            color: gray !important;
+        }
+/* Home page links ends*/
+.header {
+    font-weight: bold;
+    color: #4e95f4;
+}
+
+
+
+/*Code starts here */
+/*.ngdialog-overlay {*/
+
+.fade.in {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+    background-color: aquamarine;
+}
+
+.left-top {
+    width: 91%;
+    float: left;
+}
+
+.right-button {
+    float: right;
+}
+
+.text-box {
+    width: 80%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*For left menu hand symbol*/
+li.ng-scope {
+    cursor: pointer;
+}
+/* For notification starts */
+
+ul {
+    list-style: none;
+}
+
+.nav-tabs {
+    border-color: #ff9800;
+    width: 60%;
+}
+
+    .nav-tabs > li a {
+        border: 1px solid #ff9800;
+        background-color: #FFFFFF;
+        color: #ff9800;
+    }
+
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover {
+        background-color: #ff9800;
+        color: #FFFFFF;
+        border: 1px solid #ff9800;
+        border-bottom-color: transparent;
+    }
+
+    .nav-tabs > li > a:hover {
+        background-color: #ff9800 !important;
+        border-radius: 5px;
+        color: #FFFFFF;
+    }
+
+/*For tab div*/
+.tab-pane {
+    border: 1px solid #ff9800;
+    padding: 2%;
+    height: 350px;
+    overflow-y: auto;
+}
+
+.top-header span {
+    float: left;
+}
+
+.top-header h5 {
+    float: right;
+}
+
+.top-header {
+    float: right;
+    border-bottom: 1px solid blue;
+    width: 100%;
+}
+
+
+.notification-table {
+    width: 100%;
+}
+
+tr:hover {
+    background-color: red;
+}
+
+.notification-table td {
+}
+
+.work-area {
+    font-family: Arial !important;
+}
+
+.notification-no {
+    float: right;
+    margin: 2%;
+}
+
+</style >
+/*Notification ends */
+/***/

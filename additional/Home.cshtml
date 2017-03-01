@@ -1,0 +1,48 @@
+@model IEnumerable<BT.TS360.CMS.Project.Models.ManageGroupModel>
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_BTLayout.cshtml";
+}
+
+
+<h2>My All Data </h2>
+<style>
+
+</style>
+
+<div>
+    <h2> All Lists </h2>
+    <hr />
+
+    <table class="table-css">
+        <caption >
+            <h1>All Lists </h1>
+           
+        </caption>
+        <tr>
+            <th>List Name</th>
+            <th># of Items</th>
+            <th>Last Modified</th>
+          
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+            <tr>                
+                <td>
+                    <p class="header">  @Html.DisplayFor(modelItem => item.Gname) </p> <br/>
+                    @Html.DisplayFor(modelItem => item.GDesc)
+                </td>
+                <td> @Html.DisplayFor(modelItem => item.BID)</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MDate)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+</div>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -BT Project</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/dropzonescss")
+    @Styles.Render("~/Content/perfect-scrollbar")
+</head>
+<body>
+    <div id="app">
+        <!-- sidebar -->
+        <div class="sidebar app-aside" id="sidebar">
+            <div class="sidebar-container perfect-scrollbar">
+                <nav>
+                    <!-- start: MAIN NAVIGATION MENU -->
+                    <ul class="main-navigation-menu">
+                        <li class="active open">
+                            <a href="index.html">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-home"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title">Dashboard </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-menu-alt"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title">Lists </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="ui_elements.html">
+                                        <span class="title">DK Eyewitness </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ui_buttons.html">
+                                        <span class="title">Top 300 Travel Series </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ui_links.html">
+                                        <span class="title">Spring Top 100 Antiques &amp; Collectibles </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ui_icons.html">
+                                        <span class="title">Top 100 Occupations &amp; Careers </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ui_line_icons.html">
+                                        <span class="title">Harris Infosource </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ui_modals.html">
+                                        <span class="title">See More </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-settings"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title">Settings </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="table_basic.html">
+                                        <span class="title">My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_responsive.html">
+                                        <span class="title">Help & Support</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_data.html">
+                                        <span class="title">Manage User Permissions</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_data.html">
+                                        <span class="title">User Groups</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_data.html">
+                                        <span class="title">Manage Root-Level Hierarchy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_data.html">
+                                        <span class="title">Manage System Notifications</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_data.html">
+                                        <span class="title">Log Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- end: MAIN NAVIGATION MENU -->
+                    <!-- start: DOCUMENTATION BUTTON -->
+                    <div class="wrapper">
+                        <a href="documentation.html" class="button-o">
+                            <i class="ti-help"></i>
+                            <span>Documentation</span>
+                        </a>
+                    </div>
+                    <!-- end: DOCUMENTATION BUTTON -->
+                </nav>
+            </div>
+        </div>
+        <!-- / sidebar -->
+        <div class="app-content">
+            <!-- start: TOP NAVBAR -->
+            <header class="navbar navbar-default navbar-static-top">
+                <!-- start: NAVBAR HEADER -->
+                <div class="navbar-header">
+                    <a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
+                        <i class="ti-align-justify"></i>
+                    </a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" alt="Clip-Two" />
+                    </a>
+                    <a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
+                        <i class="ti-align-justify"></i>
+                    </a>
+                    <a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="ti-view-grid"></i>
+                    </a>
+                </div>
+                <!-- end: NAVBAR HEADER -->
+                <!-- start: NAVBAR COLLAPSE -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-right">
+                        <!-- start: USER OPTIONS DROPDOWN -->
+                        <li class="dropdown current-user">
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/avatar-1.jpg" alt="Kennedy Hall"> <span class="username">hall_kennedy <i class="ti-angle-down"></i></i></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-dark">
+                                <li>
+                                    <a href="pages_user_profile.html">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="pages_calendar.html">
+                                        Help &amp; Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a hef="pages_messages.html">Manage User Permissions</a>
+                                </li>
+                                <li>
+                                    <a href="login_lockscreen.html">User Groups</a>
+                                </li>
+                                <li>
+                                    <a href="login_lockscreen.html">Manage Root-Level Hierarchy</a>
+                                </li>
+                                <li>
+                                    <a href="login_lockscreen.html">Manage System Notifications</a>
+                                </li>
+                                <li>
+                                    <a href="login_signin.html">Log Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end: USER OPTIONS DROPDOWN -->
+                    </ul>
+                    <!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+                    <div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+                        <div class="arrow-left"></div>
+                        <div class="arrow-right"></div>
+                    </div>
+                    <!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+                </div>
+                <!-- end: NAVBAR COLLAPSE -->
+            </header>
+            <!-- end: TOP NAVBAR -->
+            <div class="main-content">
+                <div class="wrap-content container" id="container">
+                    @RenderBody()
+                    <!-- start: DASHBOARD TITLE -->
+                    <section id="page-title" class="padding-top-15 padding-bottom-15">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <h1 class="mainTitle">Dashboard</h1>
+                                <span class="mainDescription">overview &amp; stats </span>
+                            </div>
+                            <div class="col-sm-5">
+                                <!-- start: MINI STATS WITH SPARKLINE -->
+                                <ul class="mini-stats pull-right">
+                                    <li>
+                                        <div class="sparkline-1">
+                                            <span></span>
+                                        </div>
+                                        <div class="values">
+                                            <strong class="text-dark">18304</strong>
+                                            <p class="text-small no-margin">
+                                                Sales
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sparkline-2">
+                                            <span></span>
+                                        </div>
+                                        <div class="values">
+                                            <strong class="text-dark">&#36;3,833</strong>
+                                            <p class="text-small no-margin">
+                                                Earnings
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sparkline-3">
+                                            <span></span>
+                                        </div>
+                                        <div class="values">
+                                            <strong class="text-dark">&#36;848</strong>
+                                            <p class="text-small no-margin">
+                                                Referrals
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- end: MINI STATS WITH SPARKLINE -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end: DASHBOARD TITLE -->
+                    <!-- start: FIRST SECTION -->
+                    <div class="container-fluid container-fullw padding-bottom-10">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-7 col-lg-8">
+                                        <div class="panel panel-white no-radius" id="visits">
+                                            <div class="panel-heading border-light">
+                                                <h4 class="panel-title"> Visits </h4>
+                                                <ul class="panel-heading-tabs border-light">
+                                                    <li>
+                                                        <div class="pull-right">
+                                                            <div class="btn-group">
+                                                                <a class="padding-10" data-toggle="dropdown">
+                                                                    <i class="ti-more-alt "></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-light" role="menu">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Action
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Another action
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Something else here
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="rate">
+                                                            <i class="fa fa-caret-up text-primary"></i><span class="value">15</span><span class="percentage">%</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="panel-tools">
+                                                        <a data-original-title="Refresh" data-toggle="tooltip" data-placement="top" class="btn btn-transparent btn-sm panel-refresh" href="#"><i class="ti-reload"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div collapse="visits" class="panel-wrapper">
+                                                <div class="panel-body">
+                                                    <div class="height-350">
+                                                        <canvas id="chart1" class="full-width"></canvas>
+                                                        <div class="margin-top-20">
+                                                            <div class="inline pull-left">
+                                                                <div id="chart1Legend" class="chart-legend"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-lg-4">
+                                        <div class="panel panel-white no-radius">
+                                            <div class="panel-heading border-light">
+                                                <h4 class="panel-title"> Acquisition </h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <h3 class="inline-block no-margin">26</h3> visitors on-line
+                                                <div class="progress progress-xs no-radius">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                        <span class="sr-only"> 40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <h4 class="no-margin">15</h4>
+                                                        <div class="progress progress-xs no-radius no-margin">
+                                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                                                <span class="sr-only"> 80% Complete</span>
+                                                            </div>
+                                                        </div>
+                                                        Direct
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h4 class="no-margin">7</h4>
+                                                        <div class="progress progress-xs no-radius no-margin">
+                                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                                <span class="sr-only"> 60% Complete</span>
+                                                            </div>
+                                                        </div>
+                                                        Sites
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h4 class="no-margin">4</h4>
+                                                        <div class="progress progress-xs no-radius no-margin">
+                                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                                <span class="sr-only"> 40% Complete</span>
+                                                            </div>
+                                                        </div>
+                                                        Search
+                                                    </div>
+                                                </div>
+                                                <div class="row margin-top-30">
+                                                    <div class="col-xs-4 text-center">
+                                                        <div class="rate">
+                                                            <i class="fa fa-caret-up text-green"></i><span class="value">26</span><span class="percentage">%</span>
+                                                        </div>
+                                                        Mac OS X
+                                                    </div>
+                                                    <div class="col-xs-4 text-center">
+                                                        <div class="rate">
+                                                            <i class="fa fa-caret-up text-green"></i><span class="value">62</span><span class="percentage">%</span>
+                                                        </div>
+                                                        Windows
+                                                    </div>
+                                                    <div class="col-xs-4 text-center">
+                                                        <div class="rate">
+                                                            <i class="fa fa-caret-down text-red"></i><span class="value">12</span><span class="percentage">%</span>
+                                                        </div>
+                                                        Other OS
+                                                    </div>
+                                                </div>
+                                                <div class="margin-top-10">
+                                                    <div class="height-180">
+                                                        <canvas id="chart2" class="full-width"></canvas>
+                                                        <div class="inline pull-left legend-xs">
+                                                            <div id="chart2Legend" class="chart-legend"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: FIRST SECTION -->
+                </div>
+                <!-- END of .container -->
+            </div>
+            <!-- END of .main-content -->
+        </div>
+        <!-- END of .app-content -->
+        <!-- start: FOOTER -->
+        <footer>
+            <div class="footer-inner">
+                <div class="pull-left">
+                    <div class="info">
+                        <ul>
+                            <li><a href="http://www.baker-taylor.com/about.cfm" target="_blank">About</a></li>
+                            <li><a href="http://www.baker-taylor.com/privacy.cfm" target="_blank">Privacy Policy</a></li>
+                        </ul>
+                        <p>
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>. Baker &amp; Taylor. All Rights Reserved.<br>For more information, call us toll-free at 1-800-775-1800.
+                        </p>
+                    </div><!--END of .info-->
+                </div>
+                <div class="pull-right">
+                    <div class="social">
+                        <ul>
+                            <li class="facebook"><a href="http://www.facebook.com/pages/Baker-Taylor/140688295944178" target="_blank"><span>Facebook</span></a></li>
+                            <li class="linkedin"><a href="http://www.linkedin.com/company/12055" target="_blank"><span>Linked In</span></a></li>
+                            <li class="twitter"><a href="http://twitter.com/BakerandTaylor" target="_blank"><span>Twitter</span></a></li>
+                            <li class="youtube"><a href="http://www.youtube.com/user/BakerandTaylorTV?feature=mhw5" target="_blank"><span>YouTube</span></a></li>
+                        </ul>
+                    </div><!--END of .social-->
+                    <span class="go-top"><i class="ti-angle-up"></i></span>
+                </div>
+            </div>
+        </footer>
+        <!-- end: FOOTER -->
+    </div>
+    <!-- END of .app -->
+
+
+
+
+
+
+
+            <!--<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   @* @Html.ActionLink("TS360 ", "MyFiveMostRecentData", "Dashboard", new { area = "" }, new { @class = "navbar-brand" })*@
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @*<li>@Html.ActionLink("My Left Menu", "LeftMenu", "Dashboard")</li>*@
+                        @*<li>@Html.ActionLink("Notifications", "IndexPage", "Notification")</li>
+                        <li>@Html.ActionLink("My Profile", "MyProfile", "Dashboard")</li>
+                        <li>@Html.ActionLink("My Recent Data 5 Details", "MyFiveMostRecentData", "Dashboard")</li>
+                        <li>@Html.ActionLink("My Expiring Data", "MyExpiringData", "Dashboard")</li>
+                        <li>@Html.ActionLink("Show All", "Home", "Dashboard")</li>*@
+
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+            <!--<div class="container body-content">
+            <div class="row">
+                @*@RenderBody()*@
+            </div>
+        </div>-->
+            <!--END of .container-->
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @Scripts.Render("~/Scripts/angular.min.js")
+            @Scripts.Render("~/Scripts/angular-animate.min.js")
+            @Scripts.Render("~/Scripts/Angular-ui/ui-bootstrap-tpls.min.js")
+            @Scripts.Render("~/Scripts/AngularJsScripts/MyModel.js")
+            @Scripts.Render("~/Scripts/AngularJsScripts/angular.treeview.js")
+            @Scripts.Render("~/Scripts/AngularJsScripts/MyApp.js")
+            @Scripts.Render("~/bundles/dropzonescripts")
+            @Scripts.Render("~/Scripts/perfect-scrollbar")
+            @Scripts.Render("~/Scripts/additional")
+            @RenderSection("scripts", required: false)
+
+    <script>
+			jQuery(document).ready(function() {
+				Main.init();
+				Index.init();
+			});
+    </script>
+</body>
+</html>
